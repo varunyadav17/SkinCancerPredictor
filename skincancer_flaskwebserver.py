@@ -123,7 +123,7 @@ def fileUpload():
     pred = model.predict(y_img_batch)
     pred = pred.argmax(axis = -1)
 
-    response=("Benign") if pred[0] == 0 else print("Malignant")
+    response=("Benign") if pred[0] == 0 else ("Malignant")
     logger.info(response)
     jsonResp = {'category': response}
     return jsonify(jsonResp)
