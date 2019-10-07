@@ -4,3 +4,4 @@ tensorflow
 flask
 gevent
 flask_cors
+pillow
