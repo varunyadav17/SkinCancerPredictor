@@ -136,7 +136,7 @@ def createInputDirs():
       os.chdir('..')
 
 if __name__ == "__main__":
-    model = load_model('D:\Personal\SR\SkinCancerReact\Models_2019-10-05 05_38_54.710803.hdf5')
+    model = load_model('Models_2019-10-05 05_38_54.710803.hdf5')
     model.summary()
     createInputDirs()
     app.secret_key = os.urandom(24)
