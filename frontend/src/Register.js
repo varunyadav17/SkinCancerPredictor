@@ -5,6 +5,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import axios from 'axios';
 import Login from './Login'
+import {Elements, StripeProvider} from 'react-stripe-elements';
+import CheckoutForm from './CheckoutForm';
 
 class Register extends Component{
   constructor(props){
@@ -68,6 +70,16 @@ class Register extends Component{
               <RaisedButton label= "Submit" primary = {true} style = {style} onClick = {(event) => this.handleClick(event)}/>
             </div>
           </MuiThemeProvider>
+          <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
+          <div className="example">
+            <h1>React Stripe Elements Example</h1>
+            <Elements>
+              <CheckoutForm />
+            </Elements>
+          </div>
+        </StripeProvider>
+        <br/>
+        <br/>
       </div>
     );
   }
