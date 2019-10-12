@@ -62,12 +62,10 @@ Model is built using CNN and neural networks and it has accuracy of 88% with los
 
 Stripe – 
 
-1)	Install yarn if not on machine
-npm install –g yarn
+All the necessary code changes are in place only setting up stripe is needed.Please refer to this link to set up stripe with react -
 
-2)	yarn add react-stripe-elements
+https://stripe.com/docs/recipes/elements-react
 
-3)	Next, open the generated public/index.html file and add a script tag that loads the Stripe.js library in the existing head tag
 
 
  
